@@ -1,0 +1,6 @@
+C:\Users\luist\OneDrive\Escritorio\varios\IS\Modes\Switch\Switch\obj\Debug\Switch.csprojResolveAssemblyReference.cache
+C:\Users\luist\OneDrive\Escritorio\varios\IS\Modes\Switch\Switch\bin\Debug\Switch.dll
+C:\Users\luist\OneDrive\Escritorio\varios\IS\Modes\Switch\Switch\bin\Debug\Switch.pdb
+C:\Users\luist\OneDrive\Escritorio\varios\IS\Modes\Switch\Switch\bin\Debug\InfinityScript.dll
+C:\Users\luist\OneDrive\Escritorio\varios\IS\Modes\Switch\Switch\obj\Debug\Switch.dll
+C:\Users\luist\OneDrive\Escritorio\varios\IS\Modes\Switch\Switch\obj\Debug\Switch.pdb
