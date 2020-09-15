@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -40,8 +40,7 @@ namespace Switch
         }
         private void GiveWeapon(Entity player)
         {
-            Random rnd = new Random();
-            int index = rnd.Next(0, DefaultWeapons.Length);
+            int index = GSCFunctions.RandomIntRange(0, DefaultWeapons.Length);
             string getwep = DefaultWeapons[index];
             getwep = RandomCamo(player, getwep);
 
@@ -102,7 +101,7 @@ namespace Switch
         {
             GSCFunctions.ClosePopUpMenu(player, "");
             GSCFunctions.CloseInGameMenu(player);
-            player.Notify("menuresponse", "team_marinesopfor", "allies");
+            player.Notify("menuresponse", "team_marinesopfor", "axis");
             player.OnNotify("joined_team", ent =>
             {
                 AfterDelay(500, () => { ent.Notify("menuresponse", "changeclass", "class1"); });
@@ -117,11 +116,10 @@ namespace Switch
         }
         private string RandomCamo(Entity player, string weapon)
         {
-            Random rnd = new Random();
             string newWep = weapon;
             if (!NoCamo.Contains(newWep))
             {
-                int cnum = rnd.Next(1, 13);
+                int cnum = GSCFunctions.RandomIntRange(1, 13);
                 if (cnum < 10)
                     newWep = weapon + "_camo0" + cnum.ToString();
                 else
