@@ -150,8 +150,8 @@ namespace Switch
         public override void OnPlayerKilled(Entity player, Entity inflictor, Entity attacker, int damage, string mod, string weapon, Vector3 dir, string hitLoc)
         {
             if (damage >= player.Health && player != attacker)
-                if (mod != "MOD_MELEE")
-                    GiveWeapon(attacker);
+                if (mod != "MOD_MELEE" || weapon == "riotshield_mp")
+                    GiveWeapon(attacker); 
         }
 
         private string[] DefaultWeapons = {  "iw5_m4_mp",
